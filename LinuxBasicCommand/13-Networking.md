@@ -107,7 +107,10 @@ default via 192.168.37.1 dev ens33 proto dhcp metric 100
 `# ip route add 192.168.37.0/24 via 192.168.37.1`
 ### Xóa một định tuyến
 `ip route del default`
+
 Hoặc chỉ định định tuyến cần xóa.
+
+`ip route del <dia_chi_ip> via <gateway>`
 
 ## Lệnh Route
 Hiện tại bộ công cụ `iproute2` đã được thay thế mặc định cho bộ công cụ `net-tools` ở các bản phân phối Linux mới như RHEL7, CentOS 7 ...vv, dẫn tới bạn sẽ hay gặp lỗi `-bash: ifconfig: command not found` trên CentOS 7.
