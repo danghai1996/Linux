@@ -56,16 +56,17 @@ Ta thấy `ens33` đang nhận IP động, ta sẽ tiến hành đặt IP tĩnh.
 
 **1. Đặt IP:**
 
-```
-nmcli connection modify ens33 ipv4.addresses 192.168.37.11/24`
+`nmcli connection modify ens33 ipv4.addresses 192.168.37.11/24`
 
 hoặc
 
-nmcli con mod ens33 ipv4.addresses 192.168.37.11/24`
+`nmcli con mod ens33 ipv4.addresses 192.168.37.11/24`
 
+```
 -> "con" = "connection"
    "mod" = "modify"
 ```
+
 **2. Đặt Gateway:**
 
 `nmcli connection modify ens33 ipv4.gateway 192.168.37.1`
