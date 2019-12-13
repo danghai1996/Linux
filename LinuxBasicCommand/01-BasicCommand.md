@@ -1,7 +1,7 @@
 # Lệnh cơ bản hệ thống
 
 - `# exit` hoặc  `# logout`: thoát ra trạng thái đăng nhập
-- `# rebot` : khởi động lại hệ thống
+- `# reboot` : khởi động lại hệ thống
 - `# ps` : kiểm tra các tiến trình đang chạy
 - `# sleep <thoi_gian>` : cho hệ thống ngừng hoạt động trong 1 thời gian
 - `# useradd <ten_user>` : Thêm 1 user vào hệ thống
