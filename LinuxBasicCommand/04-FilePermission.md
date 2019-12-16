@@ -5,7 +5,7 @@ Trong Linux và các hệ điều hành UNIX, mọi tệp đều liên kết v�
 |Command|Nội dung|
 |-------|-----------|
 |chown|Thay đổi quyền sử hữu của người dùng đối với tệp và thư mục.|
-|chgrp|Thay đổi quyền sở hứu nhóm|
+|chgrp|Thay đổi quyền sở hữu nhóm|
 |chmod|Thay đổi quyền trên tệp|
 
 Các tệp có 3 loại quyền: đọc(r), ghi(w), thực thi(x). 3 quyền này thường được đại diện theo thứ tự:
