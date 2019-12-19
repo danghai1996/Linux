@@ -70,6 +70,7 @@ Tìm kiếm phiên bản 10.4.11 tại [đây](https://downloads.mariadb.org/mar
 > gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 > gpgcheck=1
 > EOF
+
 [mariadb]
 name = MariaDB
 baseurl = http://yum.mariadb.org/10.4/centos7-amd64
@@ -80,12 +81,12 @@ gpgcheck=1
 ```
 
 **Giải thích:**
-- name – tên của kho lưu trữ
-- baseurl – đường dẫn tới kho lưu trữ
-- gpg – là viết tắt của GNU Private Guard, là một loại chữ kí số giúp bảo vệ quyền riêng tư. Nếu đặt giá trị gpgcheck =1 thì nó sẽ xác thực gói bằng cách kiểm tra chữ ký GPG. Đặt gpgcheck=0 để bỏ qua xác thực hoặc trong trường hợp gói không được đăng ký.
-- gpgcheck – cài đặt bảo mật(1=có,0=không)
-- enable – trạng thái của kho lưu trữ(1=bật,0=tắt)
-- gpgkey – đường dẫn của file key(nếu có)
+- `name` – tên của kho lưu trữ
+- `baseurl` – đường dẫn tới kho lưu trữ
+- `gpg` – là viết tắt của GNU Private Guard, là một loại chữ kí số giúp bảo vệ quyền riêng tư. Nếu đặt giá trị gpgcheck =1 thì nó sẽ xác thực gói bằng cách kiểm tra chữ ký GPG. Đặt gpgcheck=0 để bỏ qua xác thực hoặc trong trường hợp gói không được đăng ký.
+- `gpgcheck` – cài đặt bảo mật(1=có,0=không)
+- `enable` – trạng thái của kho lưu trữ(1=bật,0=tắt)
+- `gpgkey` – đường dẫn của file key(nếu có)
 
 Hoặc có thể truy cập [link](https://downloads.mariadb.org/mariadb/repositories/), để MariaDB web tạo cho bạn nội dung Repo tương ứng với OS.
 
@@ -103,6 +104,12 @@ Hoặc có thể truy cập [link](https://downloads.mariadb.org/mariadb/reposit
 Created symlink from /etc/systemd/system/mysql.service to /usr/lib/systemd/system/mariadb.service.
 Created symlink from /etc/systemd/system/mysqld.service to /usr/lib/systemd/system/mariadb.service.
 Created symlink from /etc/systemd/system/multi-user.target.wants/mariadb.service to /usr/lib/systemd/system/mariadb.service.
+```
+
+Mở firewall 
+```
+[root@localhost ~]# firewall-cmd --add-service=mysql --permanent
+[root@localhost ~]# firewall-cmd --reload
 ```
 
 ### Thiết lập cấu hình cơ bản cho MariaDB
