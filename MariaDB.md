@@ -106,7 +106,7 @@ Created symlink from /etc/systemd/system/mysqld.service to /usr/lib/systemd/syst
 Created symlink from /etc/systemd/system/multi-user.target.wants/mariadb.service to /usr/lib/systemd/system/mariadb.service.
 ```
 
-Mở firewall 
+### Mở firewall 
 ```
 [root@localhost ~]# firewall-cmd --add-service=mysql --permanent
 [root@localhost ~]# firewall-cmd --reload
