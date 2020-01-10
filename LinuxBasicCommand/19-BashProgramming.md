@@ -207,6 +207,7 @@ The  /root/Test.txt  contains  6  lines.
 ```
 
 **Các option dùng để kiểm tra file:**
+
 |Option|Mô tả|
 |-|-|
 |-e file|Kiểm tra nếu tập tin tồn tại|
@@ -236,6 +237,7 @@ fi
 ```
 
 **Các option so sánh:**
+
 |Option|Mô tả|
 |------|-----|
 |-eq|bằng|
