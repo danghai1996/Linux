@@ -21,6 +21,7 @@ Trong đó:
 - Điều kiện nối xác định quy tắc khớp các hàng của bảng chính với các bảng chỉ định.
 
 Sơ đồ Venn minh họa cách hoạt động của `INNER JOIN`:
+
 <img src = "https://i.imgur.com/2tLh5xM.png">
 
 ## Ví dụ về cách sử dụng
@@ -63,6 +64,7 @@ INNER JOIN productlines USING (productline);
 
 ### 2. Sử dụng `INNER JOIN` với `GROUP BY`
 Ta sử dụng 2 bảng `orders` và `orderdetails`
+
 <img src = "https://i.imgur.com/egkouFP.png">
 
 Truy vấn trả về số thứ tự, trạng thái đơn hàng và tổng doanh số từ 2 bảng `orders` và `orderdetails`:
