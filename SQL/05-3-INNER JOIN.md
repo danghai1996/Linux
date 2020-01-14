@@ -26,6 +26,7 @@ Sơ đồ Venn minh họa cách hoạt động của `INNER JOIN`:
 ## Ví dụ về cách sử dụng
 ### 1. Sử dụng `INNER JOIN` cơ bản
 Ta sử dụng 2 bảng `products` và `productlines`:
+
 <img src ="https://i.imgur.com/5NK3aOy.png">
 
 Theo sơ đồ, ta thấy bảng `products` có cột `productLine` tham chiếu giá trị của cột `productLine` của bảng `productlines`. Cột `productLine` trong bảng `products` được gọi là khóa ngoại.
