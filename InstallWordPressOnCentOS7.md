@@ -3,6 +3,7 @@
 
 ## 1. Tổng quan
 WordPress là một hệ thống quản lí nội dung miễn phí và mã nguồn mở xây dựng dựa trên PHP và MySQL. Được phát hành vào năm 2003, đến nay WordPress đã trở thành một trong những hệ thống quản lí website phổ biến nhất thế giới với hơn 60 triệu website (số liệu năm 2019).
+
 <img src = "https://i.imgur.com/gPZc09f.png">
 
 ## 2. Cài đặt
